@@ -12,6 +12,7 @@ export default defineConfig(({ command }) => {
     root: 'src',
     publicDir: 'public',
     build: {
+      base: '/goit-js-hw-09/',
       sourcemap: true,
       outDir: '../dist',
       emptyOutDir: true,

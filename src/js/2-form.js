@@ -32,7 +32,7 @@ if (savedData) {
 
 form.addEventListener('input', event => {
   const { name, value } = event.target;
-  formData[name] = value;
+  formData[name] = value.trim();
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 });
 
